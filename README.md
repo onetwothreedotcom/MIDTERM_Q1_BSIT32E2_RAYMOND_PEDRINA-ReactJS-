@@ -1,5 +1,3 @@
 # MIDTERM_Q1_BSIT32E2_RAYMOND_PEDRINA-ReactJS-
 
 # nye nye nye
-
-# goo goo gaa gaa

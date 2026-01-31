@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Login from "./components/Login.jsx";
 import Dashboard from "./components/Dashboard.jsx";
-import { login as apiLogin, fetchRecipes, logout } from "./apiClient.js";
+import { login as apilogin, fetchRecipes, logout } from "./apiClient.js";
 
 export default function App() {
   const [auth, setAuth] = useState(() => {
@@ -10,7 +10,7 @@ export default function App() {
   });
 
   const handleLoggedIn = async ({ userName, password }) => {
-    const session = await apiLogin({ userName, password });
+    const session = await apilogin({ userName, password });
     setAuth(session);
     localStorage.setItem("jwt_auth", JSON.stringify(session));
     return session;
